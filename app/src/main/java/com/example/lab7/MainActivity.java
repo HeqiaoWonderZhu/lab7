@@ -9,6 +9,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -28,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         notificationManager = NotificationManagerCompat.from(this);
 
-        editTextTitle = (EditText) findViewById(R.id.editTextTitle);
-        editTextMessage = (EditText) findViewById(R.id.editTextMessage);
+        editTextTitle = (EditText) findViewById(R.id.editTextTextPersonName);
+        editTextMessage = (EditText) findViewById(R.id.editTextTextPersonName2);
     }
 
     public void sendOnChannel1(View v) {
